@@ -1,0 +1,27 @@
+#root {
+  max-width: 1280px;
+  margin: 0;
+  padding: 20px;
+  text-align: start;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: start;
+  align-items: start;
+}
+
+.info h1 {
+  margin-top: 0;
+}
+
+.score-container {
+  justify-self: end;
+  text-align: end;
+}
+
+.score-container h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
