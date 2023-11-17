@@ -1,8 +1,12 @@
 #root {
-  max-width: 1280px;
   margin: 0;
   padding: 20px;
   text-align: start;
+}
+
+p {
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .info {
@@ -24,4 +28,25 @@
 .score-container h3 {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.card-holder {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+
+.score-alert {
+  animation: scoreAlert 1s ease-in-out;
+}
+
+@keyframes scoreAlert {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: translate(-100%, 100%) scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
